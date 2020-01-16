@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dictionary</title>
+</head>
+<body>
+<div>
+    <h1>Available words</h1>
+    <p>Look up a word's definition below!</p>
+    <div>
+        <ul>
+            <li>Dog</li>
+            <li>Cat</li>
+            <li>Girl</li>
+            <li>Boy</li>
+        </ul>
+    </div>
+
+    <form id="form" action="dictionary.html" method="GET">
+        <input type="text" id="words"></input></br>
+    </br>
+        <input type = "submit" id = "button" value= "Fetch">
+    </br>   
+    <p id="demo"></p>
+    </form>
+    <script>
+        var listen = function(input){
+            document.getElementById("button").addEventListener(click, myFunction);
+            let words = [
+                {word : "Dog", description : "they are so cute"},
+                {word : "Cat", description : "they are mysterious creatures"},
+                {word : "Girl", description : "they are small princesses"},
+                {word : "Boy", description : "ewww" },            
+        ]
+            
+            function myFunction() {
+                document.getElementById("word").innerHTML;
+                document.appendChild("").innerHTML;
+
+               for(let i in words) {
+                   return word[i].value();    
+               }
+            }
+        }
+
+    </script>
+    
+</div>
+</body>
+</html>
