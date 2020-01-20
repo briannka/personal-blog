@@ -1,0 +1,37 @@
+@media(max-width:600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 20px;
+        grid-template-areas: 
+        "header"
+        "sidebar"
+        "flex-container-content"
+        "footer";
+    }
+
+    .header {
+        grid-area: "header";
+    }
+
+    .sidebar {
+        grid-area: "sidebar";
+    }
+
+    .flex-container-content {
+        grid-area: "flex-container-content";
+        width: 100px;
+    }
+
+    .footer {
+        grid-area: "footer";
+    }
+
+    .sb-card {
+        width: 50px;
+        height: auto;
+        position: none;
+    }
+
+}
