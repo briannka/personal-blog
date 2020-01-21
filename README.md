@@ -1,2 +1,2 @@
 # personal-blog
-briannka.github.io/personal-blog-master/
+briannka.github.io/personal-blog/
